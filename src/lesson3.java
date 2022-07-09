@@ -15,8 +15,21 @@ public class lesson3 {
             }
         }
         System.out.println(lang / reac);
-int arr[]={-4,-2,6,3,8};
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
+
+
+        int[]arrays={-4,-2,6,8,3,2};
+bubbleSort(arrays);
+        System.out.println(Arrays.toString(arrays));
+    }
+    public static void bubbleSort(int[] arr){
+        for(int i = arr.length-1 ; i > 0 ; i--){
+            for(int j = 0 ; j < i ; j++){
+                if( arr[j] > arr[j+1] ){
+                    int tmp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = tmp;
+                }
+            }
+            }
     }
 }
